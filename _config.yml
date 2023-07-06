@@ -1,0 +1,43 @@
+title: DFIR and Security Architecture
+description: DFIR, Remediation, Detection Engineering and Security Architecture
+author: Thirumalai Natarajan
+bio: Cyber Security Connoisseur
+avatar: /image/me.jpg
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+
+# Uncomment the below line and set the tracking ID for enabling Google Analytics
+# 
+# google_analytics: 
+
+# Uncomment the below lines and set the Disqus shortname for enabling Disqus
+# 
+# disqus:
+skin: midnight.scss
+# Jekyll
+# ======
+exclude:
+  - scripts/
+  - README.md
+  - jekyll-theme-hamilton.gemspec
+
+# Jekyll SEO Tag (Optional)
+# =========================
+Linkedin:
+  links:
+    - https://www.linkedin.com/in/thirumalainatarajan/ 
+twitter:
+  username: th1rum
+  logo: /image/me.jpg
+social:
+  name: Thirumalai Natarajan
+  links:
+    - https://twitter.com/Th1rum
+lang: en
