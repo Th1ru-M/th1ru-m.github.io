@@ -4,7 +4,6 @@ classes: wide
 title:  "Shared my thoughts on AD Security with Dark Reading journal"
 date:   2023-06-16 01:00:00 +0800
 --- 
-*16-Jun-2023* 
 I have shared my thoughts on Active Directory attack vectors and security controls with Dark Reading journal.
 
  

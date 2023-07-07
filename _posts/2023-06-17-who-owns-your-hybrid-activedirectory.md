@@ -4,7 +4,6 @@ classes: wide
 title:  "Who owns your hybrid active directory ! Hunting for adversary techniques"
 date:   2023-06-17 18:00:00 +0800
 --- 
-*17-Jun-2023* 
 This post provides three areas of security exposure in hybrid active directory and the related techniques that the threat actors can use to target hybrid Active Directory and how to detect these attack techniques. 
 
  
