@@ -7,14 +7,14 @@ permalink: /talks/
 
 ## **2023**
 
-### **SANS DFIR Summit**	
+-### **SANS DFIR Summit**	
 **Topic**: Defending and Investigating Hypervisors        
 **Links**: [Register for Summit](https://www.sans.org/u/1pkm)        
 Date: August 03, 2023
         
 ## **2022**
 
-### **AVAR Conference** 
+- ### **AVAR Conference** 
 **Topic**: Threat Hunting in Microsoft 365 Environment        
 **Links**:  [Abstract](https://aavar.org/avar2022/index.php/threat-hunting-in-m365-environment/) | [Slides (PDF)](/resources/raw/2022AVAR_ThreatHunting_in_M365.pdf)         
 Date: December 02, 2022
