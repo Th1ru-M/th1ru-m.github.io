@@ -3,7 +3,7 @@ layout: default
 title:  "My Cyber Security Talks"
 permalink: /talks/
 ---
-## <u>**My Cyber Security Talks**</u>
+## **<u>My Cyber Security Talks</u>**
 
 ## **2023**
 
