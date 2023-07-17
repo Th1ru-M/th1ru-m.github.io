@@ -50,7 +50,7 @@ Query Admin Audit Log:
 
 Query Unified Audit Logs:
 
-`$logs = Search-UnifiedAuditLog -Operations New-TransportRule, Set-TransportRule -StartDate 2022-01-01 -EndDate 2022-06-30`
+`Search-UnifiedAuditLog -Operations New-TransportRule, Set-TransportRule -StartDate 2022-01-01 -EndDate 2022-06-30`
  
 ### 4.Hunt for mailboxes configured with Full Access Delegation Settings
 
@@ -169,3 +169,16 @@ Query Unified Audit Logs:
 Query Unified Audit Logs:
 
 `Search-UnifiedAuditLog -recordtype SharePointSharingOperation -operations 'AnonymousLinkUsed' -startdate 2022-07-30 -enddate 2022-08-01`
+
+### 12.List all Service Principals configured  with secrets in Azure AD
+
+Query Azure AD Tenant:
+
+`$Spns = Get-AzureADServicePrincipal -All $true
+foreach ($Spn in $Spns) {
+    if ($Spn.PasswordCredentials.Count -ne 0 -or $Spn.KeyCredentials.Count -ne 0) {
+    Write-Host 'Application Display Name::'$Spn.DisplayName
+    Write-Host 'Application Password Count::' $Spn.PasswordCredentials.Count
+    Write-Host 'Application Key Count::' $Spn.KeyCredentials.Count
+    Write-Host ''
+    } }`   
