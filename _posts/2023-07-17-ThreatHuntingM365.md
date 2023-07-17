@@ -1,7 +1,7 @@
 ---
 layout: post
 classes: wide
-title:  "Queries to Threat Hunt in Microsoft 365 Environment"
+title:  "Threat Hunting in Microsoft 365 Environment"
 date:   2023-07-17 01:00:00 +0800
 --- 
 This post provides details about the queries that can be used to hunt various attack techniques in Microsoft 365 environment.
