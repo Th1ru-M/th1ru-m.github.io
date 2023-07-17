@@ -169,35 +169,3 @@ Query Unified Audit Logs:
 Query Unified Audit Logs:
 
 `Search-UnifiedAuditLog -recordtype SharePointSharingOperation -operations 'AnonymousLinkUsed' -startdate 2022-07-30 -enddate 2022-08-01`
-
-### 12.List all Service Principals configured  with secrets in Azure AD
-
-Query Azure AD Tenant:
-
-`$Spns = Get-AzureADServicePrincipal -All $true
-foreach ($Spn in $Spns) {
-    if ($Spn.PasswordCredentials.Count -ne 0 -or $Spn.KeyCredentials.Count -ne 0) {
-    Write-Host 'Application Display Name::'$Spn.DisplayName
-    Write-Host 'Application Password Count::' $Spn.PasswordCredentials.Count
-    Write-Host 'Application Key Count::' $Spn.KeyCredentials.Count
-    Write-Host ''
-    } }`
-    
-    
-### 13.List all Applications configured  with secrets in Azure AD
-
-Query Azure AD Tenant:
-
-`$Apps = Get-AzureADApplication -All $True
-foreach ($App in $Apps) {
-  if ($App.PasswordCredentials.Count -ne 0 -or $App.KeyCredentials.Count -ne 0) 
-  {
-  Write-Host 'Application Display Name::'$App.DisplayName
-  Write-Host 'Application Password Count::' $App.PasswordCredentials.Count
-  Write-Host 'Application Key Count::' $App.KeyCredentials.Count
-  Write-Host ''
-  } }`
-
-Query Unified Audit Logs:
-
-`Search-UnifiedAuditLog -operations 'Update application – Certificates and secrets management' -startdate 2022-06-24 -enddate 2022-06-26`
