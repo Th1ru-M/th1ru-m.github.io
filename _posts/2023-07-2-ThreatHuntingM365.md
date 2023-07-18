@@ -2,7 +2,7 @@
 layout: post
 classes: wide
 title:  "Threat Hunting in Microsoft 365 Environment"
-date:   2023-07-17 01:00:00 +0800
+date:   2023-07-2 01:00:00 +0800
 --- 
 This post provides details about the queries that can be used to hunt various attack techniques in Microsoft 365 environment.
 
