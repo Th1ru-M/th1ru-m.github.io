@@ -182,21 +182,3 @@ foreach ($Spn in $Spns) {
     Write-Host 'Application Key Count::' $Spn.KeyCredentials.Count
     Write-Host ''
     } }`
-
-### 13.List all Applications configured with secrets in Azure AD
-
-Query Azure AD Tenant:
-
-`$Apps = Get-AzureADApplication -All $True
-foreach ($App in $Apps) {
-  if ($App.PasswordCredentials.Count -ne 0 -or $App.KeyCredentials.Count -ne 0) 
-  {
-  Write-Host 'Application Display Name::'$App.DisplayName
-  Write-Host 'Application Password Count::' $App.PasswordCredentials.Count
-  Write-Host 'Application Key Count::' $App.KeyCredentials.Count
-  Write-Host ''
-  } }`
-
-Query Unified Audit Logs:
-
-`Search-UnifiedAuditLog -operations 'Update application – Certificates and secrets management' -startdate 2022-06-24 -enddate 2022-06-26`
