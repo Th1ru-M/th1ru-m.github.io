@@ -1,7 +1,7 @@
 ---
 layout: post
 classes: wide
-title:  "Exploitation of ADCS Misconfigurations"
+title:  "Exploitation of Misconfigured Certificate Templates"
 date:   2023-06-19 01:00:00 +0800
 --- 
 This post provides areas of security exposure in active directory Certificate Services and the related techniques that the threat actors can use to target ADCS and how to detect these attack techniques. 
@@ -33,7 +33,7 @@ Furthermore if the templates allow domain authentication, with domain user right
 
 3.Leverage public tools like PSPKIAudit to validate and identify misconfigurations in certificate templates. 
 
-## Exploitation of Misconfigured Certificate Template with over-permissive access  permissions
+## Exploitation of Misconfigured Certificate Template with over-permissive access permissions
 
 Users can create Certificate Signing Request for the allowed and published certificate templates and receive certificates from AD CS servers. Certificate Templates are secured using Security descriptors, which define security principals that hold permissions over it through access control entries (ACE). 
 
