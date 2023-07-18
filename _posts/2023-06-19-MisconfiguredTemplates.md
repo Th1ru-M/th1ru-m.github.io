@@ -4,7 +4,7 @@ classes: wide
 title:  "Exploitation of Misconfigured Certificate Templates"
 date:   2023-06-19 01:00:00 +0800
 --- 
-This post provides areas of security exposure in active directory Certificate Services and the related techniques that the threat actors can use to target ADCS and how to detect these attack techniques. 
+This post provides areas of security exposure in Active Directory Certificate Services(ADCS) and the related techniques that the threat actors can use to target ADCS and how to detect these attack techniques. 
 
 
 ## Exploitation of Misconfigured Certificate Template with Subject Alternative Name (SAN)
