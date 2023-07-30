@@ -31,7 +31,7 @@ I currently hold CISSP, PMP, OSCP and have held GIACx5 certifications.
 - Lead a team of cyber security analysts, Threat hunters, client service managers, onboarding & security engineers for delivering CSS services to a portfolio of medium to large enterprise clients
 - Operationalized the managed endpoint detection & response service across the region to improve the forensic triage practice for customers. This includes detections, threat hunting and
 rapid response
-- Focusing on business development in cyber security market in ASEAN & GCR regions that includes new client logos, customer retentions, upsells & strategic partner engagements
+- Focused on business development in cyber security market in ASEAN & GCR regions that includes new client logos, customer retentions, upsells & strategic partner engagements
 
 Prior Roles: SOC Manager, Principal Security Analyst, Principal Security Engineer for firewall & IDS/IPS operations and Supervisor for Technical operations 
 
@@ -41,8 +41,11 @@ Prior Roles: SOC Manager, Principal Security Analyst, Principal Security Enginee
 
 ### **Cognizant Technology Solutions** 
 (September 2006 - October 2008)
-- I worked as a Engineer for Network Services & Support Team
-- Implemented, and managed Cognizant Network infrastructure
+- I worked as Engineer for Network Team
+- Implemented, and managed Cognizant Network and Security infrastructure
+- Expertise in Cisco devices such as ASA, VPN Concentrator, NAC, Switches & routers
+- Specialised in routing protocols such as OSPF and BGP
+
 
 ### **Network Solutions** 
 (February 2005 - August 2006)
