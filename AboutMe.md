@@ -9,19 +9,22 @@ I am a cyber security executive with more than 18 years of global experience in 
 
 I have advisory experience with CXO's and senior management across industries during the time of compromise. Public speaking and delivering workshops to executives and technical audience. I have travelled across South East Asia, GCR, Australia & US for delivering security engagements for clients in diverse industries.
 
-I have spoken in various conferences such as Black Hat Asia, Virus Bulletin, SANS Summits, RSA, AVAR, BSides SG, TB-CERT, Vietnam SBC, ADF CSC & others. I have published blogs and supported in releasing columns in news media. I have shared my talks and posts in the website (https://securityblog.info).
+I have spoken in various conferences such as Black Hat Asia, Virus Bulletin, SANS Summits, RSA, AVAR, BSides SG, TB-CERT, Vietnam SBC, ADF CSC & others. I have published blogs and supported in releasing columns in news media.
 
 I currently hold CISSP, PMP, OSCP and have held GIACx5 certifications.    
     
-
+## **<u>Work Experience</u>**
 ### **Google** 
 (November 2022 - present)
-- I work as a Senior Manager to lead Security Transformation Services in APJ region
-- Managing security consultants across APJ region. Leading and managing incident response, remediation, and security architecture deliverables for APJ Customers.
+- I work as a Senior Manager in Consulting Services 
+- Managing security consultants across APJ region
+- Leading Security Transformation Services for APJ Region
+- Incident response, remediation, and security architecture 
 
 ### **Mandiant** 
 (May 2020 - October 2022)
-- I worked as a Senior Manager to Lead and manage incident response, remediation, and security architecture deliverables for APJ Customers
+- I worked as a Senior Manager in Consulting services 
+- Lead and manage incident response, remediation, and security architecture deliverables for APJ Customers
 - Prior Roles: Manager & Principal Consultant
 
 ### **Symantec** 
