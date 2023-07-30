@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "My Cyber Security Talks"
-permalink: /talks/
+title:  "About Me"
+permalink: /AboutMe/
 ---
 ## **<u>About Me</u>**
 
