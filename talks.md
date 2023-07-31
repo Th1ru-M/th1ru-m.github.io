@@ -16,17 +16,20 @@ Date: August 03, 2023
 ## **2022**
 
 - ### **AVAR Conference** 
-**Topic**: Threat Hunting in Microsoft 365 Environment        
+**Topic**: Threat Hunting in Microsoft 365 Environment
+<img src="/image/AVAR2022.jpg" width="300" height="300" />          
 **Links**:  [Abstract](https://aavar.org/avar2022/index.php/threat-hunting-in-m365-environment/) | [Slides (PDF)](/resources/raw/2022AVAR_ThreatHunting_in_M365.pdf)         
 Date: December 02, 2022
 
 - ### **Australian Defence Force-Cyber Skills Challenge** 
-**Topic**: Threat Hunting in Microsoft 365 Environment        
+**Topic**: Threat Hunting in Microsoft 365 Environment
+<img src="/image/ADFCSC2022.jpg" width="300" height="300" />  
 **Links**: [Schedule](https://adfcsc22.au/schedule/)        
 Date: November 29, 2022
 
 - ### **RSA Conference Podcast**  
-**Topic**: Ransomware Operators Can Circle Defenses: Proactive Defense Strategies        
+**Topic**: Ransomware Operators Can Circle Defenses: Proactive Defense Strategies 
+<img src="/image/RSAC2022.jpg" width="300" height="300" />  
 **Links**:  [Podcast Link](https://podcasts.apple.com/au/podcast/ransomware-operators-can-circle-defenses-proactive/id1114576642?i=1000587180095)     
 Date: November 23, 2022
 
@@ -35,12 +38,14 @@ Date: November 23, 2022
 Date: October, 2022
 
 - ### **Vietnam Security Bootcamp** 
-**Topic**: Ransomware is knocking at your Door! Proactive Hardening and Defense Strategies   
+**Topic**: Ransomware is knocking at your Door! Proactive Hardening and Defense Strategies  
+<img src="/image/SBC2022.jpg" width="300" height="300" />   
 **Links**:  [Slides (PDF)](/resources/raw/2022VietnamSBC_Ransomware_is_Knocking_at_your_Door.pdf)    
 Date: September 09, 2022
 
 - ### **SANS DFIR Summit**  
 **Topic**: Threat Hunting in Microsoft 365 Environment   
+<img src="/image/SANSDFIR2022.jpg" width="300" height="300" />   
 **Links**:  [Slides (PDF)](/resources/raw/2022_SANS_DFIR_Threat_Hunting_In_M365_Environment.pdf) | [Video Link](https://www.youtube.com/watch?v=2A0faMIEp00)    
 Date: August 15, 2022
 
@@ -73,13 +78,15 @@ Date: May 06, 2021
 ## **2019**
 
 - ### **Symantec Symposium**
-**Topic**: Security Operation Center Overview    
+**Topic**: Security Operation Center Overview  
+<img src="/image/Symcsymposium.jpg" width="300" height="300" />  
 Date: May, 2019
 
 ## **2018**
 
 - ### **GovWare Booth Talk**
-**Topic**: Next Generation SOC and Advance Competencies    
+**Topic**: Next Generation SOC and Advance Competencies 
+<img src="/image/Govwarebooth.jpg" width="300" height="300" />  
 Date: September, 2018
 
 - ### **Symantec Vision Malaysia**
