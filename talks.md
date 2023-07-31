@@ -8,7 +8,8 @@ permalink: /talks/
 ## **2023**
 
 - ### **SANS DFIR Summit**	
-**Topic**: Defending and Investigating Hypervisors        
+**Topic**: Defending and Investigating Hypervisors   
+![SANSDFIR2023](/image/SANSDFIR2023.jpg)     
 **Links**: [Register for Summit](https://www.sans.org/u/1pkm)        
 Date: August 03, 2023
         
