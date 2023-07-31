@@ -53,11 +53,13 @@ Date: August 15, 2022
 
 - ### **Virus Bulletin Conference** 
 **Topic**: Who owns your hybrid Active Directory? Hunting for adversary techniques!  
+<img src="/image/VB2021.jpg" width="300" height="300" />     
 **Links**: [Abstract](https://vblocalhost.com/presentations/who-owns-your-hybrid-active-directory-hunting-for-adversary-techniques/) | [Paper (PDF)](https://vblocalhost.com/uploads/VB2021-Thirumalai-Khanna.pdf) | [Slides (PDF)](https://vblocalhost.com/uploads/VB2021-07.pdf) | [Video Link](https://youtu.be/b68gGGXQ838?t=3977)    
 Date: October 08, 2021
 
 - ### **SANS Threat Hunting Summit**   
-**Topic**: Hunting backdoors in Active Directory Environment   
+**Topic**: Hunting backdoors in Active Directory Environment  
+<img src="/image/SANSTH2021.jpg" width="300" height="300" />        
 **Links**:   [Slides (PDF)](/resources/raw/2021_SANS_TH_Summit_Hunting_Backdoors_in_AD.pdf) | [Video Link](https://www.youtube.com/watch?v=xeCCYmE4bZM)    
 Date: October 07, 2021
 
@@ -71,7 +73,8 @@ Date: September 24, 2021
 Date: June 15, 2021
 
 - ### **Blackhat Asia Conference**
-**Topic**: Threat Hunting in Active Directory Environment   
+**Topic**: Threat Hunting in Active Directory Environment  
+<img src="/image/BHASIA2021.jpg" width="300" height="300" />  
 **Links**: [Abstract](https://www.blackhat.com/asia-21/briefings/schedule/index.html#threat-hunting-in-active-directory-environment-22292) | [Slides (PDF)](/resources/raw/2021_BlackHat_Asia_Threat_Hunting_In_Active_Directory_Environment.pdf) | [Video Link](https://www.youtube.com/watch?v=lBIaLmvVpBE)    
 Date: May 06, 2021
 
