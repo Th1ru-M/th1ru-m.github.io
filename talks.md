@@ -5,14 +5,13 @@ permalink: /talks/
 ---
 ## **<u>My Cyber Security Talks</u>**
 
-------------------------------------------------------------
-|## **2023**|
-------------------------------------------------------------
-| - ### **SANS DFIR Summit**	
+## **2023**
+
+- ### **SANS DFIR Summit**	
 **Topic**: Defending and Investigating Hypervisors        
 **Links**: [Register for Summit](https://www.sans.org/u/1pkm)        
-Date: August 03, 2023 |
--------------------------------------------------------------        
+Date: August 03, 2023
+        
 ## **2022**
 
 - ### **AVAR Conference** 
