@@ -71,7 +71,7 @@ Date: September 24, 2021
 
 - ### **TBCERT Forum**
 **Topic**: A View from the Frontlines - Lateral Movement from the on-premises to cloud  
-img src="/image/TBCERT2021.JPG" width="300" height="200" />  
+<img src="/image/TBCERT2021.JPG" width="300" height="200" />  
 Date: June 15, 2021
 
 - ### **Blackhat Asia Conference**
