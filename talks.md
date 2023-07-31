@@ -64,7 +64,8 @@ Date: October 08, 2021
 Date: October 07, 2021
 
 - ### **BSides Singapore**
-**Topic**: Attacking and Defending Hybrid Active Directory Environments   
+**Topic**: Attacking and Defending Hybrid Active Directory Environments  
+<img src="/image/bsidessg.jpg" width="300" height="150" />
 **Links**: [Slides (PDF)](/resources/raw/2021BSides-SG_Attacking_And_Defending_ActiveDirectory.pdf) | [Video Link](https://www.youtube.com/watch?v=9rb3KYKbdSI)     
 Date: September 24, 2021
 
