@@ -3,7 +3,7 @@ layout: default
 title:  "About Me"
 permalink: /AboutMe/
 ---
-## **<u>About Me</u>**
+## **<u><span style='color: blue;'>Hi, This is Thiru</span></u>**
 
 I am a cyber security executive with more than 18 years of global experience in security operations & consulting. This includes managing consultants, incident response and remediation for large scale breaches, threat hunting, building and managing security operation centers, security transformation, cyber defense assessments, business development, and client management. 
 
