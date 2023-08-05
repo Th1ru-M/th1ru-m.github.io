@@ -9,7 +9,7 @@ I am a cyber security executive with more than 18 years of global experience in 
 
 I have advisory experience with CXO's and senior management across industries during the time of compromise. Public speaking and delivering workshops to executives and technical audience. I have travelled across South East Asia, GCR, Australia & US for delivering security engagements for clients in diverse industries.
 
-I have spoken in various conferences such as Black Hat Asia, Virus Bulletin, SANS Summits, RSA, AVAR, BSides SG & many others. 
+I have spoken in security conferences such as Black Hat Asia, Virus Bulletin, SANS Summits, RSA, AVAR, BSides SG & many others. 
 
 I have published blogs in various forums and supported in releasing columns in news media.
 
