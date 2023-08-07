@@ -58,7 +58,6 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
 - Strict Lockdown mode will enforce ESXi host accessible only through vCenter  
 - Exception users can be created to not lose their permissions when the host enters lockdown mode   
 - VMware recommends not to add administrators under exception list  
-
 ![Lockdown_Mode](/image/esxi/lockdownmode.JPG)
 
 ### Password management and perform multifactor authentication
