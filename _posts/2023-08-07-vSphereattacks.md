@@ -41,10 +41,10 @@ Detections:
 
 4.VMware Tools in guest VM use a configuration file called tools.conf to configure different operations such as logging, upgrade. Enable debug logging level for VMwareService (vmsvc) to record and gain visibility over the guest operations performed by TA compromised ESXI host in guest VM. The below mentioned change will record the guest operation activities, but it generates humongous of logs and noisy too
 
-`[logging]
-log = true
-vmsvc.level = debug
-vmsvc.handler = file
+`[logging]  
+log = true  
+vmsvc.level = debug  
+vmsvc.handler = file  
 vmsvc.data = c:/Windows/Temp/vmsvc.log`  
 
 ![VMSVC_logs](/image/esxi/vmsvc.JPG)  
@@ -74,7 +74,7 @@ The SQL statements that are queried within the database is not recorded in the l
 
 2.Modify PostgreSQL.conf file and enable all logging levels to record all the queries executed within database. This change generates humongous of logs and very noisy  
 
-`root@localhost [ ~ ]# cat /storage/db/vpostgres/postgresql.conf | grep log_statement
+`root@localhost [ ~ ]# cat /storage/db/vpostgres/postgresql.conf | grep log_statement  
 log_statement = 'all'   # none, ddl, mod, all`    
 
 
