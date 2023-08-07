@@ -29,7 +29,7 @@ Threat actors (TA) can abuse VIX API to covertly perform attack techniques over 
 
 VMware Tools versions 10.3.x,11.x.x and versions less than 12.2.4 contains an authentication bypass vulnerability in the vgauth module. A fully compromised ESXi host can force VMware Tools to fail to authenticate host-to-guest operations. Threat Actor can access guest VM without authentication through a compromised ESXi  by exploiting this vulnerability. This vulnerability is tracked as CVE-2023-20867.
 
-<u>Detections</u>:
+**<u>Detections</u>**:
 
 1.Event ID 4624 will be recorded in the guest VM Windows operating system as logon type 4
 
@@ -65,7 +65,7 @@ VPXUSER account password will be stored in an encrypted format in vPostgreSQL da
 
 ![VPXUser_Compromise](/image/esxi/vpxuserattack.JPG)  
 
-<u>Detections</u>:  
+**<u>Detections</u>**:  
 
 1.PostgreSQL logging is enabled by default and configured in the file /storage/db/vpostgres/postgresql.conf. PostgreSQL logs record connections initiated to the database in vCenter.
 The SQL statements that are queried within the database is not recorded in the logs with the default configuration settings  
