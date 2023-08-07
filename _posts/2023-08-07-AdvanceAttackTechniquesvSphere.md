@@ -2,7 +2,7 @@
 layout: post
 classes: wide
 title:  "Modern attack techniques in vSphere Infrastructure"
-date:   2023-07-18 01:00:00 +0800
+date:   2023-08-07 01:00:00 +0800
 --- 
 This post provides advanced attack techniques in vSphere infrastructure.
 
@@ -31,7 +31,7 @@ VMware Tools versions 10.3.x,11.x.x and versions less than 12.2.4 contains an au
 
 Detection:
 
-1. Event ID 4624 will be recorded in the guest VM Windows operating system on logon type 4
+1.Event ID 4624 will be recorded in the guest VM Windows operating system on logon type 4
 
 2.EDR events will record write interactions and new processes spawned from vmtoolsd.exe on Windows and from the vmtools daemon on Linux
 
@@ -80,5 +80,5 @@ log_statement = 'all'   # none, ddl, mod, all`
 
 Refer below link for details,
 https://www.mandiant.com/resources/blog/vmware-esxi-zero-day-bypass
-https://github.com/jas502n/VcenterExsi_PwdDecrypt
+https://github.com/jas502n/VcenterExsi_PwdDecrypt  
 https://www.vmware.com/products/beta/ws/vixapi20/ReferenceGuide/tasks.html
