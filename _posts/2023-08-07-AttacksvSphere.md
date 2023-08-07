@@ -23,8 +23,6 @@ Through VIX API, ESXi host can perform various guest operations methods such as 
 
 Threat actors (TA) can abuse VIX API to covertly perform attack techniques over virtual machines. To achieve this attack, TA need to compromise ESXI host root account and VM administrator accounts. The following snapshot displays an example of attack technique to dump password from guest VMs.
 
-![VIXAPI_Attacks](/image/esxi/vixattack.JPG)
-
 VMware Tools versions 10.3.x,11.x.x and versions less than 12.2.4 contains an authentication bypass vulnerability in the vgauth module. A fully compromised ESXi host can force VMware Tools to fail to authenticate host-to-guest operations. Threat Actor can access guest VM without authentication through a compromised ESXi  by exploiting this vulnerability. This vulnerability is tracked as CVE-2023-20867.
 
 ###Detections:
