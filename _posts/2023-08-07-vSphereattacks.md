@@ -1,15 +1,15 @@
 ---
 layout: post
 classes: wide
-title:  "Modern attack techniques in vSphere Infrastructure"
+title:  "Modern attack techniques in VMware vSphere Infrastructure"
 date:   2023-08-07 01:00:00 +0800
 --- 
-This post provides advanced attack techniques in vSphere infrastructure.
+This post provides advanced attack techniques in VMware vSphere infrastructure. 
 
  
-## Modern attack techniques in vSphere Infrastructure
+## Modern attack techniques in VMware vSphere Infrastructure
 
-### Covert access to guest virtual machines through VIX API
+### Covert access to VMware virtual machines through VIX API
 
 VMware vSphere is the most used virtualization platform. ESXi is an enterprise class, bare-metal hypervisor to create and manage guest virtual machines. ESXi host runs UNIX like operating system, using a VMware proprietary kernel. VMware vCenter is a 
 management server to manage multiple ESXi hosts.
@@ -54,7 +54,7 @@ vmsvc.data = c:/Windows/Temp/vmsvc.log`
 ![VIXOperations_Code](/image/esxi/operationcodes.JPG)  
 
 
-### Covert access to ESXi host through vCenter
+### Covert access to ESXi host through VMware vCenter
 
 VMware vCenter is a management server to manage multiple ESXi hosts. Once ESXI host is integrated with vCenter, then vCenter will have administrative permissions over ESXI host. vCenter will create user account called VPXUSER in ESXi host. The password of this account VPXUSER will be stored in vCenter and rotated every 30 days once in an automated fashion. This account has administrative permission in ESXi host. vCenter will use this account and its credential to manage ESXi host.  
 
@@ -75,10 +75,10 @@ The SQL statements that are queried within the database is not recorded in the l
 2.Modify PostgreSQL.conf file and enable all logging levels to record all the queries executed within database. This change generates humongous of logs and very noisy  
 
 `root@localhost [ ~ ]# cat /storage/db/vpostgres/postgresql.conf | grep log_statement
-log_statement = 'all'   # none, ddl, mod, all`  
+log_statement = 'all'   # none, ddl, mod, all`    
 
 
-Refer below link for details,
+Refer below links for details,  
 https://www.mandiant.com/resources/blog/vmware-esxi-zero-day-bypass  
 https://github.com/jas502n/VcenterExsi_PwdDecrypt    
 https://www.vmware.com/products/beta/ws/vixapi20/ReferenceGuide/tasks.html
