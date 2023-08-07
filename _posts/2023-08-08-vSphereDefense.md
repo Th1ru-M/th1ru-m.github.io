@@ -87,10 +87,3 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
   `/etc/vmware/config`  
   `guest.commands.enabled = "FALSE"`  
 - Create custom roles to limit the privileges to perform guest operation such as executions  
-
-### Perform YARA scan against ESXi host
-- Perform Yara Scans against all ESXI hosts to look for malicious artefacts 
-- Mount ESXi host in any of the Linux machine using utilities such as sshfs  
-- Create Yara rules and specify the identified malicious artefacts such as strings, filenames, paths, file hash and scan the Mounted ESXi directory and identify the impacted ESXi hosts  
-  `sshfs -o allow_other,default_permissions root@<ESXi Host IP Address>:/ /mnt/esxi`  
-  `yara <rules> -r /mnt/esxi`  
