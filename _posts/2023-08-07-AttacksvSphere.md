@@ -15,3 +15,9 @@ management server to manage multiple ESXi hosts.
 ESXi host and vCenter can be managed through Secure Shell(SSH), direct console interface unit(DCUI), Web portal, automation and web application programming interface(API). SSH and shell services are disabled by default. In addition to automation API to manage vSphere infrastructure, ESXi host use VIX API to manage virtual machines(VM). VIX API is a library for writing scripts and programs to manage guest machines from the ESXi hosts. ESXI host can use VIX API even though the guest VM networking is disabled or the virtual machine is contained. ESXi need to authenticate with guest VMs for successful VIX API calls.
 
 VMware have released software development kit(SDK) for VIX API. Through VIX API, ESXi host can perform various guest operations methods such as StartProgramInGuest, InitiateFileTransferFromGuest, InitiateFileTransferToGuest.
+
+![Guest_Operations](/image/esxi/guestops.jpg)
+
+Threat actors (TA) can abuse VIX API to covertly perform attack techniques over virtual machines. To achieve this attack, TA need to compromise ESXI host root account and VM administrator accounts. The following snapshot displays an example of attack technique to dump password from guest VMs.
+
+![VIXAPI_Attacks](/image/esxi/vixattack.jpg)
