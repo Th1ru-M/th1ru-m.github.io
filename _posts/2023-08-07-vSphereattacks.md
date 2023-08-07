@@ -4,7 +4,7 @@ classes: wide
 title:  "Modern attack techniques in VMware vSphere Infrastructure"
 date:   2023-08-07 01:00:00 +0800
 --- 
-This post provides advanced attack techniques in VMware vSphere infrastructure. 
+This post provides modern attack techniques in VMware vSphere infrastructure. 
 
  
 ## Modern attack techniques in VMware vSphere Infrastructure
