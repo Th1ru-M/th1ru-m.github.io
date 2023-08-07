@@ -28,5 +28,19 @@ Detections
 
 1.Event ID 4624 will be recorded in the guest VM Windows operating system on logon type 4  
 
-2.EDR events will record write interactions and new processes spawned from vmtoolsd.exe on Windows and from the vmtools daemon on Linux
+2.EDR events will record write interactions and new processes spawned from vmtoolsd.exe on Windows and from the vmtools daemon on Linux  
+
+3.VMware.log file in the guest volume folder records virtual machine specific activities. This log records guest operations, but additional details are not recorded. For evading detections, TA can disable logging in the virtual machines vmx file. Once the VM is deleted these logs are deleted too  
+
+![VMware_logs](/image/esxi/vmwarelogs.JPG)  
+
+4.VMware Tools in guest VM use a configuration file called tools.conf to configure different operations such as logging, upgrade. Enable debug logging level for VMwareService (vmsvc) to record and gain visibility over the guest operations performed by TA compromised ESXI host in guest VM. The below mentioned change will record the guest operation activities, but it generates humongous of logs and noisy too  
+
+`[logging]
+log = true
+vmsvc.level = debug
+vmsvc.handler = file
+vmsvc.data = c:/Windows/Temp/vmsvc.log`  
+
+![VMSVC_logs](/image/esxi/vmsvc.JPG)  
 
