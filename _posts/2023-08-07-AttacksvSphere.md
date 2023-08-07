@@ -23,7 +23,7 @@ Threat actors (TA) can abuse VIX API to covertly perform attack techniques over 
 
 VMware Tools versions 10.3.x,11.x.x and versions less than 12.2.4 contains an authentication bypass vulnerability in the vgauth module. A fully compromised ESXi host can force VMware Tools to fail to authenticate host-to-guest operations. Threat Actor can access guest VM without authentication through a compromised ESXi  by exploiting this vulnerability. This vulnerability is tracked as CVE-2023-20867.
 
-###Detections:
+### Detections:
 
 1.Event ID 4624 will be recorded in the guest VM Windows operating system on logon type 4
 
@@ -34,12 +34,5 @@ VMware Tools versions 10.3.x,11.x.x and versions less than 12.2.4 contains an au
 
 4.VMware Tools in guest VM use a configuration file called tools.conf to configure different operations such as logging, upgrade. Enable debug logging level for VMwareService (vmsvc) to record and gain visibility over the guest operations performed by TA compromised ESXI host in guest VM. The below mentioned change will record the guest operation activities, but it generates humongous of logs and noisy too
 
-`[logging]
-log = true
-vmsvc.level = debug
-vmsvc.handler = file
-vmsvc.data = c:/Windows/Temp/vmsvc.log`
-
 
 5.VMSVC.log includes operation codes that denote specific VIX commands, that is equivalent to guest operations 
-
