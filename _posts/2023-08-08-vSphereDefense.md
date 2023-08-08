@@ -4,7 +4,7 @@ classes: wide
 title:  "Defending VMware vSphere from ransomware and other sophisticated attacks"
 date:   2023-08-07 03:00:00 +0800
 --- 
-This post provides detail on defense controls to secure VMware vSphere infrastructure from ransomware and other sophisticated attack
+This post provides detail on defense controls to secure VMware vSphere infrastructure from ransomware and other sophisticated attacks
 
  
 ## Defending VMware vSphere from ransomware and other sophisticated attacks
@@ -13,7 +13,7 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
 
 - Ensure the firewall rules are configured to restrict access to ESXi host and vCenter from limited approved IP addresses    
 - Disable SSH and Shell Access to ESXi host and vCenter    
-- Isolate the management interface of vCenter, ESXi, vRealize, vMotion and vSAN interfaces to a restricted VLANS    
+- Isolate the management interface of vCenter, ESXi, vRealize, vMotion and vSAN interfaces to  restricted VLANs    
 - Implement privileged access workstations for administrators to administratively access ESXi host and vCenter    
 - Disable Internet access for vSphere infrastructure    
 
@@ -33,14 +33,14 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
   `esxcli system settings kernel set -s execinstalledonly -v TRUE`  
 - To view the status of execInstalledOnly settings  
   `esxcli system settings kernel list -o execinstalledonly`  
-- Restriction activity of non-VIB binary execution is recorded in log files vobd.log,vmkernel.log and vmkwarning.log  
+- Restriction activity of non-VIB binary execution is recorded in log files such as vobd.log,vmkernel.log and vmkwarning.log  
 - execInstalledOnly settings will not prevent execution of python based binary file. Python based ransomware or malicious files can circumvent this control  
 - From ESXi 8.x onwards, execInstalledOnly settings need to be enabled through kernel and runtime option  
-- execInstalledOnly settings in runtime option is enabled by default, but can be disabled without a reboot    
+- execInstalledOnly settings in runtime option is enabled by default, but can be disabled without a ESXi reboot    
 
 ### Enable Trusted Platform Module (TPM) in ESXi host
 
-- In vSphere 7.0U2 and newer, the archived on-disk ESXi configuration file is encrypted and protected from tamper. As a result, attackers cannot read or alter this file, even if they have physical access to the ESXi host's storage  
+- In vSphere 7.0U2 and newer, the archived on-disk ESXi configuration file is encrypted and protected from tamper. As a result, TA cannot read or alter this file, even if they have  access to the ESXi host's storage  
 - ESXi host use Trusted Platform Module(TPM) or Key Derivation Function (KDF) to encrypt configuration file  
 - TPM 2.0 chip manages the encryption key and seals the configurations  
 - TPM can use Platform Configuration Register (PCR) measurements to implement policies that restrict unauthorized access to sensitive data  
@@ -54,16 +54,16 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
 ### Enable Lockdown mode in ESXi host
 
 - Enable Lockdown mode to enforce all the ESXI host operations only to be performed from vCenter  
-- Normal Lockdown Mode will enforce ESXi host accessible only through console (DCUI) and vCenter  
-- Strict Lockdown mode will enforce ESXi host accessible only through vCenter  
+- Normal Lockdown Mode will enforce ESXi host to be accessible only through console (DCUI) and vCenter  
+- Strict Lockdown mode will enforce ESXi host to be accessible only through vCenter  
 - Exception users can be created to not lose their permissions when the host enters lockdown mode   
-- VMware recommends not to add administrators under exception list  
+- VMware recommends not to add administrator accounts under exception list  
 ![Lockdown_Mode](/image/esxi/lockdownmode.JPG)
 
 ### Password management and perform multifactor authentication
 
 - Enforce Unique and strong passwords for all local accounts in ESXi host and vCenter  
-- Secure the Root Account password in Password Vault or PAM tools and automate the password rotation policy  
+- Secure the Root Account password in Password Vault or PAM tools and automate the password rotation    
 - Review and limit privileged accounts to manage ESXi host and vCenter  
 - If in case ESXi joins active directory domain, then all management of ESXi should happen from vCenter  
 - Change the name of the ESXAdmin group in Active Directory to avoid ESXi Administrator membership exposures  
@@ -78,7 +78,7 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
 ![vCenter_logs](/image/esxi/vcenterlogs.JPG)  
 - Implement robust and secure backup solutions  
 - Implement Immutable backups(write once and read many) in an air gapped network to avoid backup file encryptions or deletions  
-- Perform multi factor authentication to access backup files  
+- Perform multi-factor authentication to access backup files  
 
 ### Restrict VIX API Guest Operations
 
@@ -89,8 +89,8 @@ This post provides detail on defense controls to secure VMware vSphere infrastru
 - Create custom roles to limit the privileges to perform guest operation such as executions  
 
 ### Perform YARA scan against ESXi host
-- Perform Yara Scans against all ESXI hosts to look for malicious artefacts 
-- Mount ESXi host in any of the Linux machine using utilities such as sshfs  
-- Create Yara rules and specify the identified malicious artefacts such as strings, filenames, paths, file hash and scan the Mounted ESXi directory and identify the impacted ESXi hosts  
+- Perform Yara Scans against all ESXi hosts to look for malicious artefacts 
+- Mount ESXi host in any of the DFIR Linux machine using utilities such as sshfs  
+- Create Yara rules and specify the identified malicious artefacts such as strings, filenames, paths, file hash and scan the mounted ESXi directory and identify the impacted ESXi host  
   `sshfs -o allow_other,default_permissions root@<ESXi Host IP Address>:/ /mnt/esxi`  
   `yara <rules> -r /mnt/esxi`  
