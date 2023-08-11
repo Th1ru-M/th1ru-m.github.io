@@ -7,7 +7,7 @@ date:   2023-08-05 01:00:00 +0800
 This post provide details on  credential scanning methodology over various instances in cloud environment.  
 
  
-## Introduction
+### Introduction
 
 Organizations are rapidly transforming their infrastructure and hosting in various cloud providers. Sensitive systems and software codes are developed using cloud services and lean toward serverless and container-based architectures. Secure and scalable secret management solutions have to be enforced for seamless development activities and business operations. Lagging on these strategies can end up with unpredicted implications like threat actors privileged access over the environment or access to the crown jewels. Threat actors can extract secrets from the multiple surfaces in cloud environment. Proactively scan the cloud instances and reduce the exposure of hardcoded secrets.  
       
@@ -15,7 +15,8 @@ Organizations are rapidly transforming their infrastructure and hosting in vario
 
 AWS Lambda is a serverless computing services, can be used for running the code without provisioning infrastructure. This is event driven serverless computing platform. The practice of hardcoding sensitive credentials in Lambda functions will get expose to privilege escalation opportunity. This data can be accessed with read only privileged account. Regardless of the password length or complexity, an attacker who gains access to an account or code repository with read-only privileges would be able to use the exposed credentials to escalate privileges.  
 
-LambdaGuard is an AWS Lambda auditing tool designed to create asset visibility. It provides an overview in terms of statistical analysis, AWS service dependencies and configuration checks from the security perspective. This tool will detect the hardened  credentials in the lambda functions through static analysis over the codes.    
+LambdaGuard is an AWS Lambda auditing tool designed to create asset visibility. It provides an overview in terms of statistical analysis, AWS service dependencies and configuration checks from the security perspective. This tool will detect the hardened  credentials in the lambda functions through static analysis over the codes.  
+
 For more details,     
 https://github.com/Skyscanner/LambdaGuard
 
@@ -59,7 +60,8 @@ https://github.com/stelligent/cfn_nag
 
 AWS S3 buckets are used as simple storage mechanism for files in the cloud environment. S3 buckets can be accessed from public based on the configurations. Developers sometime may store credentials and other secrets in source code and other material stored in these S3 buckets.   
 
-Scan some of the well-known files and software codes that are expected to have credentials such as .py, .json, .yaml, .php.
+Scan some of the well-known files and software codes that are expected to have credentials such as .py, .json, .yaml, .php.  
+
 Perform recursive search over all the files to identify access keys.  
 `grep -RP '(?<![A-Z0-9])[A-Z0-9]{20}(?![A-Z0-9])' *`  
 
