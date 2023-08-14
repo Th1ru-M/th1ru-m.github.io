@@ -1,7 +1,7 @@
 ---
 layout: post
 classes: wide
-title:  "Credential scanning in cloud environments"
+title:  "Credential scanning in AWS and Git environments"
 date:   2023-08-05 01:00:00 +0800
 --- 
 This post provide details on methodology to identify hardcoded credentials over various instances in cloud environment.  
