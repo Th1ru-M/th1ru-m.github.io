@@ -28,11 +28,11 @@ TA after compromising a machine, TA can install TeamViewer application in the vi
 
 ![TeamViewer_Attacks](/image/teamviewer/dataextraction1.JPG)
 
-In `connections` log, you can identify outgoing connection details, that includes TA TeamViewer ID , connection type(Remotecontrol or File Transfer) and session start/end time.  
+Analyse `connections` log in victim machine to identify outgoing connection details, that includes TA TeamViewer ID , connection type(Remotecontrol or File Transfer) and session start/end time.  
 
 ![TeamViewer_outgoing](/image/teamviewer/outgoing.JPG)
 
-Analyse`TeamViewer15_Logfile` to identify victim TeamViewer ID, TA TeamViewer ID and Public IP address/domain details of TeamViewer relay server/router.  
+Analyse`TeamViewer15_Logfile` in victim machine to identify victim TeamViewer ID, TA TeamViewer ID and Public IP address/domain details of TeamViewer relay server/router.  
 
 ![TeamViewer_IP](/image/teamviewer/ipdetails.JPG)
 
@@ -40,7 +40,7 @@ Analyse`TeamViewer15_Logfile` to identify victim TeamViewer ID, TA TeamViewer ID
 
 ![TeamViewer_datatransfer](/image/teamviewer/datatransfer.JPG)
 
-`TeamViewer15_Logfile` will also record details about TeamViewer application used in the victim machine.  
+`TeamViewer15_Logfile` in victim machine will also record details about TeamViewer application used in the victim machine.  
 
 
 ### Threat Actor pushes malicious files through TeamViewer application
@@ -49,15 +49,15 @@ TA after compromising a machine, TA can install TeamViewer application in the vi
 
 ![TeamViewer_binary](/image/teamviewer/maliciousbinary1.JPG)
 
-`connections_incoming` log will record the incoming TeamViewer connection details. This log will record the TA TeamViewer ID, session start/end time, TA Teamviewer Account name .    
+`connections_incoming` log in victim machine will record the incoming TeamViewer connection details. This log will record the TA TeamViewer ID, session start/end time, TA Teamviewer Account name .    
   
 ![TeamViewer_incoming](/image/teamviewer/incoming.JPG)
 
-`TeamViewer15_Logfile` will record the incoming connection details, that includes TA TeamViewer ID, TeamViewer account name, TeamViewer relay server details, Authentication status.  
+`TeamViewer15_Logfile` in victim machine will record the incoming connection details, that includes TA TeamViewer ID, TeamViewer account name, TeamViewer relay server details, Authentication status.  
    
 ![TeamViewer_incomingip](/image/teamviewer/incomingipdetails.JPG)
 
-`TeamViewer15_Logfile` will record file downloaded activity, that includes the downloaded file name and size.
+`TeamViewer15_Logfile` will also record file downloaded activity, that includes the downloaded file name and size.
    
 ![TeamViewer_incomingbinary](/image/teamviewer/maliciouspush.JPG)
 
