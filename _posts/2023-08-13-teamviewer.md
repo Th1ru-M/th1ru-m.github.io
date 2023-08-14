@@ -26,7 +26,7 @@ As an investigator, you can analyse these log files to understand the TA activit
 
 TA after compromising a machine, TA can install TeamViewer application in the victim machine to transfer data to TA infrastructure.   
 
-![TeamViewer_Attacks](/image/teamviewer/dataextraction.JPG)
+![TeamViewer_Attacks](/image/teamviewer/dataextraction1.JPG)
 
 In `connections` log, you can identify outgoing connection details, that includes TA TeamViewer ID , connection type(Remotecontrol or File Transfer) and session start/end time.  
 
@@ -47,7 +47,7 @@ Analyse`TeamViewer15_Logfile` to identify victim TeamViewer ID, TA TeamViewer ID
 
 TA after compromising a machine, TA can install TeamViewer application in the victim machine to push additional malicious binaries from TA infrastructure.   
 
-![TeamViewer_binary](/image/teamviewer/maliciousbinary.JPG)
+![TeamViewer_binary](/image/teamviewer/maliciousbinary1.JPG)
 
 `connections_incoming` log will record the incoming TeamViewer connection details. This log will record the TA TeamViewer ID, session start/end time, TA Teamviewer Account name .    
   
