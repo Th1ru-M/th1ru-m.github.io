@@ -17,8 +17,8 @@ Following log files related to TeamViewer applications are recorded in the direc
 
 Along with the above log files, these are the additional artefacts that are recorded in the Windows machine. The below mentioned log files are recorded in the directory `C:\Users\<User profile>\AppData\Roaming\TeamViewer`.    
 
-1.Connections
-2.MRU directory that includes TVC files
+1.Connections  
+2.MRU directory that includes TVC files  
 
 As an investigator, you can analyse these log files to understand the TA activity.     
 
