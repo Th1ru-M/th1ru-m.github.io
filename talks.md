@@ -15,7 +15,6 @@ Date: October 20, 2023
 
 - ### **Google NEXT APJ Event**	
 **Topic**: Tales of cloud compromise - Real incidents, real learnings  
-<img src="/image/GoogleNEXT2023.jpg" width="300" height="300" />  
 **Links**: [Schedule](https://cloudonair.withgoogle.com/events/apac-best-of-next23?talk=d1-s16-en)  
 Date: September 26, 2023  
 
