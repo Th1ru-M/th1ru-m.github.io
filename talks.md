@@ -22,8 +22,8 @@ Date: September 26, 2023
 - ### **SANS DFIR Summit**	
 **Topic**: Defending and Investigating Hypervisors   
 <img src="/image/SANSDFIR2023.jpg" width="300" height="300" />  
-**Links**: [Slides (PDF)](/resources/raw/2023SANSDFIR_DefendingandInvestigatingHypervisors.pdf)  
-Date: August 03, 2023
+**Links**: [Slides (PDF)](/resources/raw/2023SANSDFIR_DefendingandInvestigatingHypervisors.pdf) | [Video Link](https://www.youtube.com/watch?v=lJwc_UgzbO4)      
+Date: August 03, 2023  
         
 ## **2022**
 
