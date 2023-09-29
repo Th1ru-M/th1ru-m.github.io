@@ -16,7 +16,7 @@ Date: October 20, 2023
 - ### **Google NEXT APJ Event**	
 **Topic**: Tales of cloud compromise - Real Incidents, Real Learnings  
 <img src="/image/GoogleNEXT2023.jpg" width="300" height="300" />    
-**Links**: [Schedule](https://cloudonair.withgoogle.com/events/apac-best-of-next23?talk=d1-s16-en)  
+**Links**: [Abstract](https://cloudonair.withgoogle.com/events/apac-best-of-next23?talk=d1-s16-en) | [Video Link](https://www.youtube.com/watch?v=ULxFNIKG6gU&t=819s)    
 Date: September 26, 2023  
 
 - ### **SANS DFIR Summit**	
