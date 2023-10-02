@@ -7,12 +7,6 @@ permalink: /talks/
 
 ## **2023**
 
-- ### **DFRWS APAC - Digital Forensics Research Conference**	
-**Topic**: Investigating attacks over VMware vSphere Infrastructure    
-<img src="/image/2023DFRWS.jpg" width="300" height="200" />  
-**Links**: [Schedule](https://dfrws.org/apac-2023-program/)    
-Date: October 20, 2023    
-
 - ### **Google NEXT APJ Event**	
 **Topic**: Tales of cloud compromise - Real Incidents, Real Learnings  
 <img src="/image/GOOGLENEXT2023.jpeg" width="300" height="300" />    
