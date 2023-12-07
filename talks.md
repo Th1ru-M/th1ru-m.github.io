@@ -9,7 +9,7 @@ permalink: /talks/
 
 - ### **Magnet Virtual Summit 2024**	
 **Topic**: Incident Response in VMware vSphere Infrastructure  
-<img src="/image/MVS.jpg" width="300" height="300" />    
+<img src="/image/MVS.jpg" width="300" height="75" />    
 **Links**: [Schedule](https://magnetvirtualsummit.com/registration/)    
 Date: March 06, 2024  
 
