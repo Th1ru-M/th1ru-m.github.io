@@ -5,14 +5,6 @@ permalink: /talks/
 ---
 ## **<u>My Cyber Security Talks</u>**
 
-## **2024**
-
-- ### **Magnet Virtual Summit 2024**	
-**Topic**: Incident Response in VMware vSphere Infrastructure  
-<img src="/image/MVS.jpg" width="300" height="75" />    
-**Links**: [Schedule](https://vshow.on24.com/vshow/mvs2024_VC/exhibits/sessions_by_theme/)    
-Date: March 06, 2024  
-
 ## **2023**
 
 - ### **Google NEXT APJ Event**	
