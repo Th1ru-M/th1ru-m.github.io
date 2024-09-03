@@ -9,7 +9,7 @@ permalink: /talks/
 
 - ### **Career Talk with SRM University Students**	
 **Topic**: Career in CyberSecurity:Hone your skillset  
-<img src="/image/career.JPG" width="300" height="300" />    
+<img src="/image/Career2024.JPG" width="300" height="300" />    
 Date: April 10, 2024  
 
 ## **2023**
