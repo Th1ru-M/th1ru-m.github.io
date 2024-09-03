@@ -5,6 +5,13 @@ permalink: /talks/
 ---
 ## **<u>My Cyber Security Talks</u>**
 
+## **2024**
+
+- ### **Career Talk with SRM Students**	
+**Topic**: Career in CyberSecurity:Hone your skillset  
+<img src="/image/careertalk.jpeg" width="300" height="300" />    
+Date: April 10, 2024  
+
 ## **2023**
 
 - ### **Google NEXT APJ Event**	
