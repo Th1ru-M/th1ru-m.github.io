@@ -2,7 +2,7 @@
 layout: post
 classes: wide
 title:  "Threat Hunting in Windows Endpoints"
-date:   2024-12-08 01:00:00 +0800
+date:   2024-12-07 01:00:00 +0800
 --- 
 This post provides details on threat hunting in the machines running in Windows operating system.  
 
