@@ -15,14 +15,14 @@ While Power Automate provides various benefits by automating processes, it also 
 
 ### Threat Scenarios
 
-<u>Email Extractions:</u>\
+<u>Email Extractions:</u>
 
 After compromising a user account and credentials, Adversaries can create a workflow to autoforward emails of the compromised account. Whenever a new email arrives, flow will be triggered and execute an action to forward email to threat actor Email ID.
 
 ![Autoforward](/image/flows/autoforward.JPG)
 
 
-<u>Data Extractions:</u>\
+<u>Data Extractions:</u>
 
 After compromising a user account and credentials, Adversaries can create a workflow to extract data from the OneDrive of the compromised account to adversaries cloud storage account or services. In the below diagram, When a new file is created which matches the trigger, so flow will be executed with an action to upload a copy of the file to Threat Actors cloud storage Account (Drop box).
 
@@ -31,7 +31,7 @@ After compromising a user account and credentials, Adversaries can create a work
 
 ### Artefacts Recorded
 
-<u>Email Extractions:</u>\
+<u>Email Extractions:</u>
 
 There will be a `CreateFlow` event recorded in the unified audit log in Microsoft 365. This will include the account information that created the flow, which is the compromised acount and the flow details URL.
 
@@ -43,7 +43,7 @@ For arrival of all the new emails, the flow will be executed and the email will 
 
 ![Send](/image/flows/send.JPG)
 
-<u>Data Extractions:</u>\
+<u>Data Extractions:</u>
 
 For creation of any new files in One Drive for the compromised user account, the flow will be executed and the file will be uploaded to adversaries cloud storage account. There will be a `FileDownloaded` operation recorded in the unified audit log and that includes the Client IP range of the Microsoft.
 
