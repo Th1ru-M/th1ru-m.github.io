@@ -19,7 +19,7 @@ While Power Automate provides various benefits by automating processes, it also 
 
 After compromising a user account and credentials, Adversaries can create a workflow to autoforward emails of the compromised account. Whenever a new email arrives, flow will be triggered and execute an action to forward email to threat actor Email ID.
 
-![Autoforward](/image/flows/autoforward.JPG)
+![Autoforward](/image/flows/autoforward1.JPG)
 
 
 <u>Data Extractions:</u>
@@ -35,20 +35,20 @@ After compromising a user account and credentials, Adversaries can create a work
 
 There will be a `CreateFlow` event recorded in the unified audit log in Microsoft 365. This will include the account information that created the flow, which is the compromised acount and the flow details URL.
 
-![createflow](/image/flows/createflow.JPG)
+![createflow](/image/flows/createflow1.JPG)
 
 
 For arrival of all the new emails, the flow will be executed and the email will be autoforwarded to adversaries Email ID. There will be a `Send` operation recorded in the unified audit log and that includes the Client IP range of the Microsoft.
 
 
-![Send](/image/flows/send.JPG)
+![Send](/image/flows/send1.JPG)
 
 <u>Data Extractions:</u>
 
 For creation of any new files in One Drive for the compromised user account, the flow will be executed and the file will be uploaded to adversaries cloud storage account. There will be a `FileDownloaded` operation recorded in the unified audit log and that includes the Client IP range of the Microsoft.
 
 
-![Download](/image/flows/download.JPG)
+![Download](/image/flows/download1.JPG)
 
 ### Query the Power Automate Flow
 
