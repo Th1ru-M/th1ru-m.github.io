@@ -1,14 +1,14 @@
 ---
 layout: post
 classes: wide
-title:  "Threat Hunting in Windows Endpoints"
+title:  "Threat Hunting in Windows Endpoints - LoL Techniques"
 date:   2024-12-08 12:00:00 +0800
 --- 
 This post provides details on threat hunting in the machines running in Windows operating system.  
 
  
 ### Introduction
-Threat hunting in a Windows environment involves the proactive search for indicators of compromise (IOCs) and other malicious artefacts to detect threats. I have listed some of the hunting techniques in the Windows environment.
+Cybersecurity professionals need to be aware of Living off the Land tactics because they can make attacks harder to detect. Since adversaries leverage trusted and already-existing binaries, these activities can appear innocuous, blending in with regular system operations. I have listed some of the hunting techniques in the Windows environment.
 
 ### **<u>Application Whitelisting Bypass: regsvr32.exe</u>**
 
