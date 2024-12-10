@@ -82,17 +82,17 @@ To extract the entire configuration of the flows, you can leverage PnP powershel
 ### Defense Controls
 
 - Configure Tenant Isolation access control in Powerplatform adminstrator portal to control data from moving into or out of the tenant in Microsoft Entra connectors for apps and flows. 
-You can configure exception rule for inbound and outbound direction to allow data exchange through flow to happen only within your tenant. This will restrict users to authenticate to external tenants when they create flows. This will effect only on Entra ID authentication based connectors within Power Platform. It doesn't impact Microsoft Entra ID-based access outside of Power Platform
+You can configure exception rule for inbound and outbound direction to allow data exchange through flow to happen only within your tenant. This will restrict users to authenticate to external tenants when they create flows. This will effect only on Entra ID authentication based connectors within Power Platform. It does not impact Microsoft Entra ID-based access outside of Power Platform
 
-![TenantIsolation](/image/flows/isolation.JPG)
+  ![TenantIsolation](/image/flows/isolation.JPG)
 
 - Configure data policies in Power Platform admin center that allow administrators to control access to these connectors in various ways to help reduce risk in your organization
 
 - Combination of data policies and tenant isolation in Power Platform can protect Organization data getting exposed 
 
-- You can also leverage Entra ID-wide Tenant Restriction. Entra ID Tenant Restriction is focused on controlling user access to different Entra ID tenants, primarily concerning authentication and access to Azure resources. 
+- You can also leverage Entra ID-wide Tenant Restriction. Entra ID Tenant Restriction is focused on controlling user access to different Entra ID tenants, primarily concerning authentication and access to Azure resources
 
-- When Power Automate flow is used to send or forward emails via connectors like Outlook or other Microsoft-based email services, often the email header includes the `x-ms-mailapplication`. This header helps to identify the application or service that initiated the email. Configure a Transport rule in Exchange online to block emails with the `x-ms-mailapplication` header with value `Microsoft Power Automate` for the mail operation type as send or forward.
+- When Power Automate flow is used to send or forward emails via connectors like Outlook or other Microsoft-based email services, often the email header includes the `x-ms-mailapplication`. This header helps to identify the application or service that initiated the email. Configure a Transport rule in Exchange online to block emails with the `x-ms-mailapplication` header with value `Microsoft Power Automate` for the mail operation type as send or forward
 
 
  
