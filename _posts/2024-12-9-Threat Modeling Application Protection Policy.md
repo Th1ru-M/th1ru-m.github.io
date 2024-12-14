@@ -66,6 +66,8 @@ A user attempts to download and install a non-approved version of a corporate ap
 
 - Enforce Conditional access policies with Android/IOS mobile devices to grant access to Organization data only with a control `Require app protection policy`
 
+### Android Work Profile 
+
 The Android Work Profile is a new feature that creates a distinct, separate "container" on the devices. This ensures that personal apps and data are kept apart from work-related apps and data, offering privacy for personal use while maintaining corporate security for work-related functions. By enrolling your device in Intune or other supporting solutions, you get secure access to corporate apps on your Android devices, and access to apps in Intune Company Portal and the Microsoft Intune app.
 
 
