@@ -5,6 +5,18 @@ permalink: /talks/
 ---
 ## **<u>My Cyber Security Talks</u>**
 
+## **2025**
+
+- ### **BlueHat Event**	
+**Topic**: Incident Response in Virtual Infrastructure: Combating APT and eCrime Threats  
+<img src="/image/bluehat.JPG" width="300" height="300" />    
+Date: May 14, 2025  
+
+- ### **Mandiant Insiders Series**	
+**Topic**: Defending and Investigating Hypervisors from APT and eCrime Actors  
+<img src="/image/Mandiantinsidersseries.JPG" width="300" height="300" />    
+Date: May 06, 2025  
+
 ## **2024**
 
 - ### **Career Talk with SRM University Students**	
