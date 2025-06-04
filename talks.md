@@ -10,6 +10,7 @@ permalink: /talks/
 - ### **BlueHat Event**	
 **Topic**: Incident Response in Virtual Infrastructure: Combating APT and eCrime Threats  
 <img src="/image/bluehat.JPG" width="300" height="300" />    
+**Links**: [Video Link](https://www.youtube.com/watch?v=xwr4m7W6LP8)      
 Date: May 14, 2025  
 
 - ### **Mandiant Insiders Series**	
