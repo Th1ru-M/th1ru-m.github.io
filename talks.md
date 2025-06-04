@@ -7,6 +7,12 @@ permalink: /talks/
 
 ## **2025**
 
+- ### **Google Thailand Event**	
+**Topic**: Proactive Defense-Hardening Your Enterprise  
+<img src="/image/GoogleThailand.JPG" width="300" height="300" />    
+Date: June 27, 2025  
+
+
 - ### **BlueHat Event**	
 **Topic**: Incident Response in Virtual Infrastructure: Combating APT and eCrime Threats  
 <img src="/image/bluehat.JPG" width="300" height="300" />    
