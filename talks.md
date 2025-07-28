@@ -7,6 +7,12 @@ permalink: /talks/
 
 ## **2025**
 
+- ### **Google Malaysia Event**	
+**Topic**: Proactive Defense against eCrime Actors
+<img src="/image/GoogleThailand.JPG" width="300" height="300" />    
+Date: August 7, 2025  
+
+
 - ### **Google Thailand Event**	
 **Topic**: Proactive Defense-Hardening Your Enterprise  
 <img src="/image/GoogleThailand.JPG" width="300" height="300" />    
