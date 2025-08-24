@@ -7,6 +7,11 @@ permalink: /talks/
 
 ## **2025**
 
+- ### **Google Singapore AD & Cloud Event**	
+**Topic**: Unseen Access: The Hidden Risks in Your Infrastructure
+<img src="/image/GoogleSingapore.JPG" width="300" height="300" />    
+Date: September 23, 2025  
+
 - ### **Google Malaysia Event**	
 **Topic**: Proactive Defense against eCrime Actors
 <img src="/image/GoogleMalaysia.JPG" width="300" height="300" />    
