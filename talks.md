@@ -12,13 +12,13 @@ permalink: /talks/
 <img src="/image/GoogleSingapore.JPG" width="300" height="300" />    
 Date: September 23, 2025  
 
-- ### **Google Malaysia Event**	
+- ### **Google Cloud Security Malaysia Event**	
 **Topic**: Proactive Defense against eCrime Actors
 <img src="/image/GoogleMalaysia.JPG" width="300" height="300" />    
 Date: August 7, 2025  
 
 
-- ### **Google Thailand Event**	
+- ### **Google Cloud Security Thailand Event**	
 **Topic**: Proactive Defense-Hardening Your Enterprise  
 <img src="/image/GoogleThailand.JPG" width="300" height="300" />    
 Date: June 27, 2025  
