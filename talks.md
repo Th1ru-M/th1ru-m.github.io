@@ -5,6 +5,13 @@ permalink: /talks/
 ---
 ## **<u>My Cyber Security Talks</u>**
 
+## **2026**
+
+- ### **Mandiant Insiders Series**	
+**Topic**: Defending the Cloud & SaaS: Notable Investigations from 2025
+<img src="/image/Insidersseries2026.jpg" width="300" height="300" />    
+Date: May 12, 2026
+
 ## **2025**
 
 - ### **Google Singapore AD & Cloud Event**	
