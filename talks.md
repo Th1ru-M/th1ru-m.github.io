@@ -21,7 +21,7 @@ Date: September 23, 2025
 
 - ### **Google Cloud Security Malaysia Event**	
 **Topic**: Proactive Defense against eCrime Actors
-<img src="/image/GoogleMalaysia.JPG" width="300" height="300" />    
+<img src="/image/GoogleMalaysia2025.JPG" width="300" height="300" />    
 Date: August 7, 2025  
 
 
