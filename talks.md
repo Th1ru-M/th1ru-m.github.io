@@ -7,6 +7,12 @@ permalink: /talks/
 
 ## **2026**
 
+- ### **AISA CyberCon 2026**	
+**Topic**: Responding to attacks targeting Cloud Identity solutions
+<img src="/image/AISA2026.jpg" width="300" height="300" />  
+**Links**: [Schedule](https://melbourne2026.cyberconference.com.au/sessions/session-ljaw4k4iph)      
+Date: Oct 15, 2026
+
 - ### **Mandiant Insiders Series**	
 **Topic**: Defending the Cloud & SaaS: Notable Investigations from 2025
 <img src="/image/Insidersseries2026.jpg" width="300" height="300" />    
