@@ -37,7 +37,7 @@ Date: August 7, 2025
 Date: June 27, 2025  
 
 
-- ### **BlueHat Event**	
+- ### **BlueHat Conference**	
 **Topic**: Incident Response in Virtual Infrastructure: Combating APT and eCrime Threats  
 <img src="/image/bluehat.JPG" width="300" height="300" />    
 **Links**: [Video Link](https://www.youtube.com/watch?v=xwr4m7W6LP8)      
