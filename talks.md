@@ -15,7 +15,8 @@ Date: Oct 15, 2026
 
 - ### **Mandiant Insiders Series**	
 **Topic**: Defending the Cloud & SaaS: Notable Investigations from 2025
-<img src="/image/Insidersseries2026.jpg" width="300" height="300" />    
+<img src="/image/Insidersseries2026.jpg" width="300" height="300" />  
+**Links**: [Video Link](https://www.brighttalk.com/webcast/12695/665924)        
 Date: May 12, 2026
 
 ## **2025**
