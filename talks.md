@@ -48,6 +48,7 @@ Date: May 14, 2025
 **Topic**: Defending and Investigating Hypervisors from APT and eCrime Actors  
 <img src="/image/Mandiantinsidersseries.JPG" width="300" height="300" />    
 Date: May 06, 2025  
+**Links**: [Video Link](https://www.brighttalk.com/webcast/12695/641271?utm_source=Mandiant&utm_medium=brighttalk&utm_campaign=641271)
 
 ## **2024**
 
